@@ -73,6 +73,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "ray-x/go.nvim"
+  use {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
