@@ -127,6 +127,10 @@ local mappings = {
       "<cmd>Gitsigns diffthis HEAD<cr>",
       "Diff",
     },
+    F = {
+      "<cmd>lua require'telescope'.extensions.repo.list{file_ignore_patterns={'%.vim', '%.local', '%.tmux', '%.krew', '%.fzf', '%.oh%-my%-zsh'}}<cr>",
+      "Find Repo"
+    },
   },
 
   l = {
