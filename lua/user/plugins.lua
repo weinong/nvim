@@ -51,6 +51,7 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
   use "folke/which-key.nvim"
   use "akinsho/toggleterm.nvim"
+  use "sudormrfbin/cheatsheet.nvim"
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out

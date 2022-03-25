@@ -12,4 +12,5 @@ require "user.nvim-tree"
 require "user.bufferline"
 require "user.whichkey"
 require "user.toggleterm"
+require "user.cheatsheet"
 
