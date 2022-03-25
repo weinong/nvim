@@ -162,6 +162,7 @@ local mappings = {
       "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
       "Workspace Symbols",
     },
+    J = {"<cmd>%!jq .<cr>", "Format JSON"},
   },
   s = {
     name = "Search",
