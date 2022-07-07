@@ -148,11 +148,11 @@ local mappings = {
     f = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
     i = { "<cmd>LspInfo<cr>", "Info" },
     j = {
-      "<cmd>lua vim.lsp.diagnostic.goto_next({ border = 'rounded' })<CR>",
+      "<cmd>lua vim.diagnostic.goto_next({ border = 'rounded' })<CR>",
       "Next Diagnostic",
     },
     k = {
-      "<cmd>lua vim.lsp.diagnostic.goto_prev({ border = 'rounded' })<cr>",
+      "<cmd>lua vim.diagnostic.goto_prev({ border = 'rounded' })<cr>",
       "Prev Diagnostic",
     },
     l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
