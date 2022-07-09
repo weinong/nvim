@@ -1,0 +1,14 @@
+## Developer
+Go to Declaration           | gD
+Go to Definition            | gd
+Go to Implementation        | gi
+Go to References            | gr
+Signature Help              | <C-k>
+Hover                       | K
+Next Diagnostic             | ]d
+PRev Diagnostic             | [d
+Open Float                  | gl
+Golang - Doc                | <leader>Gd
+Golang - Build              | <leader>Gb
+Golang - Test Current File  | <leader>Gt
+Golang - Test All           | <leader>GT
