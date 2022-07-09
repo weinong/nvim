@@ -6,8 +6,8 @@ Go to References            | gr
 Signature Help              | <C-k>
 Hover                       | K
 Next Diagnostic             | ]d
-PRev Diagnostic             | [d
-Open Float                  | gl
+Prev Diagnostic             | [d
+Open Diagnostic             | gl
 Golang - Doc                | <leader>Gd
 Golang - Build              | <leader>Gb
 Golang - Test Current File  | <leader>Gt
