@@ -13,4 +13,5 @@ require "user.bufferline"
 require "user.whichkey"
 require "user.toggleterm"
 require "user.cheatsheet"
+require "user.feline"
 
