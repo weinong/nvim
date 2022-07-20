@@ -50,9 +50,7 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
   use "folke/which-key.nvim"
   use {"akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons"}
-  use {"akinsho/toggleterm.nvim", tag = 'v2.*', config = function()
-    require("toggleterm").setup()
-  end}
+  use {"akinsho/toggleterm.nvim", tag = 'v2.*'}
   use "sudormrfbin/cheatsheet.nvim"
   use 'feline-nvim/feline.nvim'
 
