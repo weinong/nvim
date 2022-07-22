@@ -14,4 +14,5 @@ require "user.whichkey"
 require "user.toggleterm"
 require "user.cheatsheet"
 require "user.feline"
+require "user.dap"
 

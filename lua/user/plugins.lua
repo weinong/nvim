@@ -77,6 +77,11 @@ return packer.startup(function(use)
   use "ray-x/go.nvim"
   use {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}
 
+  -- DAP
+  use "mfussenegger/nvim-dap"
+  use "leoluz/nvim-dap-go"
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use "cljoly/telescope-repo.nvim"
