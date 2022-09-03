@@ -15,11 +15,23 @@ end
 
 local servers = {
   gopls = {},
+  sumneko_lua = {
+    settings = {
+      Lua = {
+        diagnostics = {
+          globals = { "vim" }
+        }
+      }
+    }
+  }
 }
 
 local options = {
   on_attach = require("user.lsp.handlers").on_attach,
   capabilities = require("user.lsp.handlers").capabilities,
+  flags = {
+    debounce_text_changes = 150,
+  },
 }
 
 require("mason").setup()
@@ -37,6 +49,6 @@ local lspconfig = require("lspconfig")
 require("mason-lspconfig").setup_handlers {
   function(server_name)
       local opts = vim.tbl_deep_extend("force", options, servers[server_name] or {})
-      lspconfig[server_name].setup ( options )
+      lspconfig[server_name].setup ( opts )
   end,
 }
