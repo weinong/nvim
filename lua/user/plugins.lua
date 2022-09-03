@@ -73,7 +73,10 @@ return packer.startup(function(use)
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  --use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+  use "WhoIsSethDaniel/mason-tool-installer.nvim"
   use "ray-x/go.nvim"
   use {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}
 
