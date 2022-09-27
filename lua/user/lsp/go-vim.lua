@@ -3,14 +3,6 @@ if not status_ok then
 	return
 end
 
-local lsp_status_ok, _ = pcall(require, "nvim-lsp-installer")
-if not lsp_status_ok then
-	return
-end
-
-local path = require 'nvim-lsp-installer.core.path'
-local install_root_dir = path.concat {vim.fn.stdpath 'data', 'lsp_servers'}
-
 go.setup({
   go='go', -- go command, can be go[default] or go1.18beta1
   goimport='gopls', -- goimport command, can be gopls[default] or goimport
@@ -40,7 +32,6 @@ go.setup({
   lsp_document_formatting = true,
   -- set to true: use gopls to format
   -- false if you want to use other formatter tool(e.g. efm, nulls)
-  gopls_cmd = {install_root_dir .. '/go/gopls'}, -- if you need to specify gopls path and cmd, e.g {"/home/user/lsp/gopls", "-logfile","/var/log/gopls.log" }
   gopls_remote_auto = true, -- add -remote=auto to gopls
   dap_debug = true, -- set to false to disable dap
   dap_debug_keymap = true, -- true: use keymap for debugger defined in go/dap.lua
