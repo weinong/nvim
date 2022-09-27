@@ -8,13 +8,10 @@ if not status_ok then
   return
 end
 
---local status_ok, _ = pcall(require, "mason-tool-installer")
---if not status_ok then
---  return
---end
-
 local servers = {
   gopls = {},
+  jsonls = {},
+  yamlls = {},
   sumneko_lua = {
     settings = {
       Lua = {
@@ -36,7 +33,16 @@ local options = {
 
 require("mason").setup()
 
---require("mason-tool-installer").setup()
+require("mason-tool-installer").setup{
+  ensure_installed = {
+    'delve',
+    'gopls',
+    'json-lsp',
+    'bicep-lsp',
+    'yaml-language-server',
+    'lua-language-server'
+  }
+}
 
 require("mason-lspconfig").setup({
   ensure_installed = vim.tbl_keys(servers),
