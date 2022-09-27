@@ -79,6 +79,7 @@ return packer.startup(function(use)
   use "WhoIsSethDaniel/mason-tool-installer.nvim"
   use "ray-x/go.nvim"
   use {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}
+  use "carlsmedstad/vim-bicep"
 
   -- DAP
   use "mfussenegger/nvim-dap"
