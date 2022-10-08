@@ -35,12 +35,14 @@ require("mason").setup()
 
 require("mason-tool-installer").setup{
   ensure_installed = {
+    'bicep-lsp',
+    'codelldb',
     'delve',
     'gopls',
     'json-lsp',
-    'bicep-lsp',
     'yaml-language-server',
-    'lua-language-server'
+    'lua-language-server',
+    'rust-analyzer'
   }
 }
 

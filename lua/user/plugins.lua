@@ -80,6 +80,7 @@ return packer.startup(function(use)
   use "ray-x/go.nvim"
   use {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}
   use "carlsmedstad/vim-bicep"
+  use 'simrat39/rust-tools.nvim'
 
   -- DAP
   use "mfussenegger/nvim-dap"
