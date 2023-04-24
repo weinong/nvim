@@ -44,6 +44,8 @@ return {
       -- LSP Server Settings
       ---@type lspconfig.options
       servers = {
+        bashls = {},
+        bicep = {},
         gopls = {},
         jsonls = {},
         lua_ls = {
