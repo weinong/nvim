@@ -89,7 +89,28 @@ return {
   {
     "mfussenegger/nvim-dap",
     dependencies = {
-      "leoluz/nvim-dap-go",
+      {
+        "leoluz/nvim-dap-go",
+        keys = {
+          {
+            "<leader>dGT",
+            function()
+              require("dap-go").debug_test()
+            end,
+            desc = "Run Go Test",
+          },
+        },
+        config = true,
+      },
+      -- which key integration
+      {
+        "folke/which-key.nvim",
+        opts = {
+          defaults = {
+            ["<leader>dG"] = { name = "+debug Go" },
+          },
+        },
+      },
     },
   },
 }
